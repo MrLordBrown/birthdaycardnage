@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+#invite {
+  width: 50vw;
+  height: 50vh;
+  z-index: 1;
+  margin-top: 13vh;
+  margin-left: 25vw;
+  position: fixed;
+  text-align: center;
+  font-family: 'Nova Script', cursive;
+}
+
+#nezuko {
+  height: 25vh;
+  width: 50vw;
+  z-index: 1;
+  position: fixed;
+  margin-top: 63vh;
+  margin-left: 25vw;
+}
+
+#box {
+  width: 50vw;
+  height: 75vh;
+  z-index: 2;
+  position: fixed;
+  margin-top: 13vh;
+  margin-left: 25vw;
+  transition: opacity 2s;
+}
+
+body {
+  background-color: pink;
+}
+#crow {
+  height: 25vh;
+  width: 25vw;
+  position: fixed;
+  margin-left: -25vw;
+  margin-top: 25vh;
+  z-index: 3;
+  animation: fly;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+#background {
+  height: 75vh;
+  width: 50vw;
+  background-color: saddlebrown
+}
+
+#box:hover {
+  opacity: 0;
+}
+
+@keyframes fly {
+  from {margin-left: -25vw;}
+  to {margin-left: 125vw;}
+}
